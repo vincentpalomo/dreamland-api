@@ -1,0 +1,25 @@
+{
+  "name": "dreamland-api",
+  "version": "1.0.0",
+  "description": "REST API for Disenchantment",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincentpalomo/dreamland-api.git"
+  },
+  "keywords": [
+    "RESTAPI"
+  ],
+  "author": "Vincent Palomo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincentpalomo/dreamland-api/issues"
+  },
+  "homepage": "https://github.com/vincentpalomo/dreamland-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
