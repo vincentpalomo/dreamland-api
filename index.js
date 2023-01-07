@@ -17,8 +17,10 @@ app.use(bodyParser.json());
 
 app.get('/data', dataRoutes);
 
-app.get('/', (req, res) => {
-  res.send('<h1>Welcome to Dreamland API</h1>');
+app.get('/data/:id', (req, res) => {
+  const id = Number(req.params.id);
+  const data = (id) => data.id === id;
+  res.send(data);
 });
 
 app.listen(PORT, () => console.log(`Server Running: http://localhost:${PORT}`));
