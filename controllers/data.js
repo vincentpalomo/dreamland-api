@@ -129,3 +129,9 @@ const data = [
 export const fetchAllData = (req, res) => {
   res.send(data);
 };
+
+export const fetchSingleData = (req, res) => {
+  const id = Number(req.params.id);
+  const char = data.find((c) => c.id === id);
+  res.send(char);
+};

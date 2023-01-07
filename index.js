@@ -17,10 +17,6 @@ app.use(bodyParser.json());
 
 app.get('/data', dataRoutes);
 
-app.get('/data/:id', (req, res) => {
-  const id = Number(req.params.id);
-  const data = (id) => data.id === id;
-  res.send(data);
-});
+app.get('/data/:id', dataRoutes);
 
 app.listen(PORT, () => console.log(`Server Running: http://localhost:${PORT}`));
